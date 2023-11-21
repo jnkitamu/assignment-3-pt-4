@@ -7,11 +7,12 @@
       h1 {
         text-align: center;
         color: #282828;
+        font-family: Tahoma, sans-serif;
       }
 
       h2 {
         text-align: left;
-        font-family: Helvetica, sans-serif;
+        font-family: Tahoma, sans-serif;
       }
 
       .header {
@@ -79,8 +80,30 @@
         background-color: #a2b5b8;
       }
 
+      * {
+        box-sizing: border-box;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: left;
+        font-family: Tahoma, sans-serif;
+      }
+
+      .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+      }
+
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
     </style>
-    </head>
+  </head>
   <body>
     <div class="header">
       <h1>
@@ -112,14 +135,67 @@ Date retrieved: Nov. 20, 2023
       <h2>
         My first ever build!
       </h2>
-      <img src="myfirstbuild.jpg" alt="Birds eye view of my first keyboard build" width="500" height="400">
-      <img src="myfirstbuildsideview.jpg" alt="Side view of my first keyboard build" width="500" height="400">
+      <div class="row">
+        <div class="column">
+          <img src="myfirstbuild.jpg" alt="Birds eye view of my first keyboard build" width="500" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="column">
+          <img src="myfirstbuildsideview.jpg" alt="Side view of my first keyboard build" width="500" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
     </div>
 
-    <div id="section2">Your amazing content goes here!</div>
+    <div id="section2">
+      <br>
+      <h2>
+        My Mom's build!
+      </h2>
+      <div class="row">
+        <div class="column">
+          <img src="mommysbuild.jpg" alt="Birds eye view of my first keyboard build" width="500" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="column">
+          <img src="mommysbuildsideview.jpg" alt="Side view of my first keyboard build" width="500" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+    </div>
 
-    <div id="section3">Your amazing content goes here!</div>
+    <div id="section3">
+      <br>
+      <h2>
+        My friend's build!
+      </h2>
+      <div class="row">
+        <div class="column">
+          <img src="hastisbuild.jpg" alt="Birds eye view of my first keyboard build" width="500" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="column">
+          <img src="hastisbuildsideview.jpg" alt="Side view of my first keyboard build" width="500" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </div>
+      </div>
+    </div>
 
-    <div id="section4">Your amazing content goes here!</div>
+    <div id="section4">
+      <br>
+      <h2>
+        My current build!
+      </h2>
+      <div class="row">
+        <div class="column">
+          <img src="mycurrentbuild.jpg" alt="Birds eye view of my first keyboard build" width="500" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="column">
+          <img src="mycurrentbuildsideview.jpg" alt="Side view of my first keyboard build" width="500" height="400">
+          <div class="desc">Add a description of the imaghere</div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
